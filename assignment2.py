@@ -17,12 +17,11 @@ y = training_data['meal']
 
 # Initialize Random Forest model
 model = RandomForestClassifier(
-    n_estimators=300,        # number of trees
+    n_estimators=200,        # number of trees
     n_jobs=-1,               # use all CPU cores
     max_depth=15,            # limit tree depth
     min_samples_leaf=2,      # minimum samples per leaf
     min_samples_split=5,     # minimum samples to split
-    random_state=42          # reproducibility
 )
 
 # Fit model on training data
